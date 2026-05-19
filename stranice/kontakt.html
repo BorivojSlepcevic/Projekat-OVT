@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Škoda Auto - Kontakt i Zakazivanje Vožnje</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+    <header>
+        <header>
+            <center>
+                <img src="../slike/logo.png" alt="Škoda Logo" width="120">
+                <h1>Škoda Auto</h1>
+                <p>Simply Clever</p>
+            </center>
+        </header>
+        <nav>
+            <center>
+                <nav>
+                    <a href="../index.html">Početna</a> | 
+                    <a href="modeli.html">Modeli</a> | 
+                    <a href="istorijat.html">Istorijat</a> | 
+                    <a href="galerija.html">Galerija</a> | 
+                    <a href="kontakt.html">Kontakt</a>
+                </nav>
+            </center>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Kontaktirajte nas</h2>
+            <p>Imate pitanja o našim vozilima ili želite da zakažete probnu vožnju? Popunite zvaničnu formu ispod i naš prodajni tim će vas kontaktirati u najkraćem roku.</p>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Lični podaci podnosioca zahteva</legend>
+                    <br>
+                    
+                    <label for="ime">Ime i prezime:</label><br>
+                    <input type="text" id="ime" name="korisnik_ime" required>
+                    <br><br>
+
+                    <label for="email">E-mail adresa:</label><br>
+                    <input type="email" id="email" name="korisnik_email" required>
+                    <br><br>
+
+                    <label for="telefon">Broj telefona:</label><br>
+                    <input type="tel" id="telefon" name="korisnik_telefon">
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalji zahteva i izbor vozila</legend>
+                    <br>
+
+                    <label for="izbor_modela">Izaberite model za test vožnju:</label><br>
+                    <select id="izbor_modela" name="odabrani_auto">
+                        <option value="fabia">Škoda Fabia</option>
+                        <option value="octavia">Škoda Octavia</option>
+                        <option value="superb">Škoda Superb</option>
+                        <option value="kodiaq">Škoda Kodiaq</option>
+                    </select>
+                    <br><br>
+
+                    <label for="datum_glavni">Željeni datum vožnje:</label><br>
+                    <input type="date" id="datum_glavni" name="datum_testa" required>
+                    <br><br>
+
+                    <p>Tip motora koji preferirate:</p>
+                    <input type="radio" id="benzin" name="tip_motora" value="benzin" checked>
+                    <label for="benzin">Benzinski motor (TSI)</label><br>
+                    <input type="radio" id="dizel" name="tip_motora" value="dizel">
+                    <label for="dizel">Dizelski motor (TDI)</label><br>
+                    <input type="radio" id="hibrid" name="tip_motora" value="hibrid">
+                    <label for="hibrid">Hibridni pogon (iV)</label>
+                    <br><br>
+
+                    <input type="checkbox" id="saglasnost" name="pravila_privatnosti" value="prihvaćeno" required>
+                    <label for="saglasnost">Saglasan sam sa obradom podataka o ličnosti</label>
+                    <br><br>
+
+                    <label for="poruka">Dodatna napomena ili pitanja:</label><br>
+                    <textarea id="poruka" name="poruka_korisnika" rows="6" cols="40" placeholder="Unesite vaš tekst ovde..."></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+                
+                <input type="reset" value="Poništi formu">
+                <input type="submit" value="Pošalji zahtev">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Sajt radio Borivoj slepčević</p>
+    </footer>
+
+</body>
+</html>
